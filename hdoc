@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#build and open haddock documentation for specified target
+google-chrome $(cabal new-haddock $1 2>&1 | grep index.html)
+

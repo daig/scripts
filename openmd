@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#open a markdown file as html in the browser
+
+tmpHtml="/tmp/${1%.md}.html"
+markdown $1 > $tmpHtml && google-chrome $tmpHtml
